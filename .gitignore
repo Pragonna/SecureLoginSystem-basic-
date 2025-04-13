@@ -1,0 +1,17 @@
+# Ignore build output folders
+[Bb]in/
+[Dd]ebug/
+[Oo]bj/
+
+# Ignore Visual Studio specific folders
+.vs/
+
+# Ignore .NET versioned folders like net5.0, net6.0, net7.0, etc.
+[Nn][Ee][Tt][0-9].[0-9]*/
+
+# Ignore reference folders
+[Rr]ef/
+[Rr]efint/
+
+# Ignore Git directory (not recommended unless you're copying repo contents without git history)
+.git/

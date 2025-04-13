@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Web.Api\\Web.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EmailSender.Service\\EmailSender.Service.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
