@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Core.Application.Common;
 using Core.Domain.Common.Models;
 using Core.Domain.Entities;
@@ -57,7 +57,7 @@ namespace Core.Infrastructure.Persistence.Users.Features.Manager
             await userRepository.UpdateSecurityDetailsOnDb(_user.SecurityDetails);
 
             var userLoginDto = mapper.Map<UserDto>(_user);
-            userLoginDto.HasUser = true;
+            // userLoginDto.HasUser = true;
 
             return Result<UserDto, Error>.Success(userLoginDto, new SendVerificationEmailIntegrationEvent(userLoginDto.Email, _user.SecurityDetails));
         }
