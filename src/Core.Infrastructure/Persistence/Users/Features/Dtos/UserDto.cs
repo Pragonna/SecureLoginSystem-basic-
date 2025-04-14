@@ -1,4 +1,4 @@
-﻿using Core.Domain.Entities;
+using Core.Domain.Entities;
 using Core.Domain.Entities.Enums;
 using Core.Infrastructure.Securities.Models;
 
@@ -14,7 +14,6 @@ namespace Core.Infrastructure.Persistence.Users.Features.Dtos
         public Gender? Gender { get; set; }
         public string? Country { get; set; }
         public string? Bio { get; set; }
-        public Image? Image { get; set; }
-        public bool HasUser{ get; set; }
+        public Image? Image { get;set;}
     }
 }
