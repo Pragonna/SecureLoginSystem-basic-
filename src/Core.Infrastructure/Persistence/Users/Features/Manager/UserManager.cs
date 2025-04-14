@@ -65,7 +65,9 @@ namespace Core.Infrastructure.Persistence.Users.Features.Manager
         {
             var users = await userRepository.GetAllAsync(
                 expression: u => u.Email == email && u.SecurityDetails.OTPCode == OTPCode && u.SecurityDetails.OTPExpiryDate > DateTime.UtcNow,
-                include: i => i.Include(u => u.SecurityDetails)!);
+                include: i => i.Include(u => u.SecurityDetails)!
+                                .Include(u => u.UserAndUserRoles)
+                                .ThenInclude(x => x.Role));
             User? user = users.FirstOrDefault();
 
             if (!users.Any())
