@@ -31,7 +31,7 @@ namespace Core.Application.Common
         public static Result<TResponse, TError> Success(TResponse response, IList<IntegrationEvent> events)
         {
             var result = new Result<TResponse, TError>(response);
-            if (events != null)
+            if (events.Any())
             {
                 result.Events = events;
                 result.HasEvent = true;
