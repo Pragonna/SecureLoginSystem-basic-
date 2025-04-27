@@ -19,7 +19,7 @@ This is a .NET Core-based solution with a layered architecture implementing asyn
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 - [RabbitMQ](https://www.rabbitmq.com/download.html)
 - SQL Server (or other DB if configured)
 
@@ -79,10 +79,9 @@ dotnet add reference ../YourProject.csproj
 ## 🛠 Technologies Used
 
 - ASP.NET Core Web API
-- Entity Framework Core
+- Entity Framework 
 - RabbitMQ
-- SMTP (Email)
-- DDD / Clean Architecture principles
+- MediatR
 
 ---
 
